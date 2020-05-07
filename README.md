@@ -41,7 +41,7 @@ I used  KNN match selection (k=2) and performed descriptor distance ratio filter
 |:---:|:---:|:----:|:-----:|:-----:|:-----:|
 |1 | SHITOMASI + BRISK |13423 |4912 |338.80 |14.5 |
 |2 | SHITOMASI + BRIEF |13423 |6625 |219.82 |30.15 |
-|3 | *SHITOMASI + ORB |13423 |5673 |220.91 |25.71* |
+|3 | **SHITOMASI + ORB** |13423 |5673 |220.91 |25.71* |
 |4 | SHITOMASI + FREAK |13423 |4084 |622.21 |6.564 |
 |5 | SHITOMASI + SIFT |13423 |9484 |474.33 |19.99 |
 |6 | SHITOMASI + AKAZE |NaN |NaN |NaN |NaN |
