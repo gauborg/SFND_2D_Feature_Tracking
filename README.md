@@ -41,7 +41,7 @@ I used  KNN match selection (k=2) and performed descriptor distance ratio filter
 |:---:|:---:|:----:|:-----:|:-----:|:-----:|
 |1 | SHITOMASI + BRISK |13423 |4912 |338.80 |14.5 |
 |2 | SHITOMASI + BRIEF |13423 |6625 |219.82 |30.15 |
-|3 | SHITOMASI + ORB |13423 |5673 |220.91 |25.71 |
+|3 | **SHITOMASI + ORB |13423 |5673 |220.91 |25.71** |
 |4 | SHITOMASI + FREAK |13423 |4084 |622.21 |6.564 |
 |5 | SHITOMASI + SIFT |13423 |9484 |474.33 |19.99 |
 |6 | SHITOMASI + AKAZE |NaN |NaN |NaN |NaN |
@@ -52,8 +52,8 @@ I used  KNN match selection (k=2) and performed descriptor distance ratio filter
 |11 | HARRIS + AKAZE |N/A |N/A |N/A |N/A|
 |12 | HARRIS + SIFT |728 |554 |384.82 |1.439 |
 |13 | FAST + BRISK |49204 |14267 |503.38 |28.34 |
-|14 | FAST + BRIEF |49204 |19554 |195.83 |99.85 |
-|15 | FAST + ORB |49204 |16896 |107.25 |157.54 |
+|14 | **FAST + BRIEF |49204 |19554 |195.83 |99.85** |
+|15 | **FAST + ORB |49204 |16896 |107.25 |157.54** |
 |16 | FAST + FREAK |49204 |11717|799.77 |14.65 |
 |17 | FAST + AKAZE |N/A |N/A |N/A |N/A|
 |18 | FAST + SIFT |49204 |30082 |2134.49 |14.09 |
@@ -81,3 +81,11 @@ I used  KNN match selection (k=2) and performed descriptor distance ratio filter
 |40 | SIFT + FREAK |13860 |3334 |2334.01 |1.43 |
 |41 | SIFT + AKAZE |13860|N/A |N/A| N/A|
 |42 | SIFT + SIFT |13860 |7020 |2298.95 |3.05 |
+
+The best three pairs of detectors/descriptors combinations are shown below based on their performance.
+
+|Sr. No. | Detector + Descriptor |Total Keypoints |Total Matches |Total Time (ms) |Ratio (matches/time) |
+|:---:|:---:|:----:|:-----:|:-----:|:-----:|
+|15 | **FAST + ORB |49204 |16896 |107.25 |157.54** |
+|14 | **FAST + BRIEF |49204 |19554 |195.83 |99.85** |
+|3 | **SHITOMASI + ORB |13423 |5673 |220.91 |25.71** |
